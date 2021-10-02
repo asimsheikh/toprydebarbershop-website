@@ -1,0 +1,9 @@
+This is a features list for the refactor project
+
+1. Price list
+2. Feature 2 
+3. Feature 3
+4. Feature 4
+5. Feature 5
+
+Features can be added and removed from this list.
