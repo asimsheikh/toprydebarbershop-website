@@ -1,7 +1,7 @@
 /*body styling*/
 body {
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: black;
 }
 
 /*page header styling*/
@@ -136,7 +136,7 @@ table.cont td {
     width: 35px;
     height: 35px;
     border-radius: 50%;
-    border: 1px solid: white;
+    border: 1px solid white;
     font-size: 20px;
     color: white;
     text-align: center;
