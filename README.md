@@ -1,4 +1,4 @@
-### Toprydebarbershop Website
+# Toprydebarbershop Website
 
 This project is a refactor of the site built in 2015.
 
@@ -25,3 +25,7 @@ This project is a refactor of the site built in 2015.
   - figma
   - git 
   - github
+
+## Log
+
+ - 8/10/2021 - Had meeting with Fai around tech stack, tasks and general development process moving forward
