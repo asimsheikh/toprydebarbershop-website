@@ -71,11 +71,22 @@
         color: white;
         border: solid 2px white;
         padding: 1rem 2rem;
+        transition-duration: 200ms;
       }
 
       .link-button:hover {
         color: black;
         background-color: white;
+      }
+
+      .link-button.cta-button {
+        color: black;
+        background-color: white;
+      }
+
+      .link-button.cta-button:hover {
+        color: white;
+        background-color: black;
       }
     </style>
   </head>
@@ -95,7 +106,7 @@
         <p>
           <br />
           <br />
-          <a class="link-button" href="/">Book an appointment</a>
+          <a class="link-button cta-button" href="/">Book an appointment</a>
           <a class="link-button" href="/">See our work</a>
         </p>
       </div>
