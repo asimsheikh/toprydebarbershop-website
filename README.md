@@ -29,3 +29,8 @@ This project is a refactor of the site built in 2015.
 ## Log
 
  - 8/10/2021 - Had meeting with Fai around tech stack, tasks and general development process moving forward
+
+## CI/CD Locations
+
+ - https://development--toprydebarbershop.netlify.app/
+ - https://staging--toprydebarbershop.netlify.app/
