@@ -12,9 +12,9 @@ This project is a refactor of the site built in 2015.
   - footer
   - gallery feature
   - bootstrap removal from development branch (completed 10/10/2021)
-  - creating semantic html5
   
  ### Asim
+  - creating semantic html5 (completed 12/10/2021)
   - Hero section
   - Making maps static image
 
