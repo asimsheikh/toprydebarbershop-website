@@ -28,13 +28,43 @@
     />
     <link rel="stylesheet" href="styles.css" />
     <style>
-      #hero {
-        display: flex;
-        flex-direction: row;
+      @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&display=swap');
+    </style>
+    <style>
+      h1 {
+        font-size: 3.5rem;
       }
 
+      p {
+        font-size: 1.9rem;
+      }
+      body {
+        font-family: 'Montserrat', sans-serif;
+      }
+      .hero {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        /* background-color: yellow; */
+      }
+
+      .hero-item {
+        /* background: grey; */
+        width: 70%;
+      }
+
+      .hero-item.main {
+        margin-top: 20rem;
+        margin-left: 10rem;
+      }
+
+      .right {
+        width: 30%;
+      }
       #shaver {
-        width: 50%;
+        height: 400px;
+        width: auto;
+        object-fit: contain;
       }
     </style>
   </head>
@@ -42,13 +72,17 @@
   <body>
     <header></header>
     <nav></nav>
-    <section id="hero">
-      <div class="main">
-        <h1>The Best Fades, Cuts and Trims in Sydney</h1>
-        <p>We are a group of professional babers that care</p>
-        <p>An institution that has been in the business for over 50 years</p>
+    <section class="hero">
+      <div class="hero-item main">
+        <h1>The Best Fades</h1>
+        <h1>Cuts, Trims & Shaves</h1>
+        <br />
+        <p>
+          We are a group of professional babers in Ryde that care. An
+          institution that has been in the business for over 50 years
+        </p>
       </div>
-      <div class="right">
+      <div class="hero-item right">
         <img id="shaver" src="shaver.jpg" alt="a shaver" />
       </div>
     </section>
