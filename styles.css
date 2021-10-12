@@ -1,47 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
-    background-color: white;
-    color: black;
+  background-color: black;
+  color: white;
 }
-
-.page-header {
-    color: white;
-    background-color: black;
-	text-transform: uppercase;
-	letter-spacing: 10px;
-	text-shadow: 3px 3px 5px #000;
-    border-bottom: 0;
-    padding: 30px 0px;
-    margin-top: 0;
-    margin-bottom: 0;
-}
-
-h1 {
-	font-size:30px;
-}
-
-h2 {
-    background-color: black;
-    color:white;
-    text-transform: uppercase;
-    letter-spacing: 5px;
-    text-shadow: 3px 3px 5px #000;
-    font-size: 20px;
-    padding: 9px;
-    margin-top: 25px;
-    margin-bottom: 15px;
-}
-
-#welcome {
-    border: 1px solid black;  
-    font-size: 15px;
-}
-
-#saturday_note {
-    margin-top: 8px;
-    text-align: left;
-}
-
-
-
-
-
