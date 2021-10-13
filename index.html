@@ -53,13 +53,38 @@
       }
 
       #hero {
-        background-color: chocolate;
+        /* background-color: chocolate; */
+        background-color: #000000f2;
         display: flex;
         flex-direction: row;
       }
 
       .hero-image > img {
         width: 100%;
+      }
+
+      .link-button {
+        font-size: 1.4rem;
+        text-decoration: none;
+        color: white;
+        border: solid 2px white;
+        padding: 1rem 2rem;
+        transition-duration: 200ms;
+      }
+
+      .link-button:hover {
+        color: black;
+        background-color: white;
+      }
+
+      .link-button.cta-button {
+        color: black;
+        background-color: white;
+      }
+
+      .link-button.cta-button:hover {
+        color: white;
+        background-color: black;
       }
 
       #trading-hours {
@@ -91,11 +116,36 @@
         #hero {
           display: flex;
           flex-direction: column;
+          padding-bottom: 2rem;
         }
 
         .hero-image > img {
           width: 100%;
           display: none;
+        }
+
+        .link-button {
+          font-size: 1rem;
+          text-decoration: none;
+          color: white;
+          border: solid 2px white;
+          padding: 1rem 2rem;
+          transition-duration: 200ms;
+        }
+
+        .link-button:hover {
+          color: black;
+          background-color: white;
+        }
+
+        .link-button.cta-button {
+          color: black;
+          background-color: white;
+        }
+
+        .link-button.cta-button:hover {
+          color: white;
+          background-color: black;
         }
       }
     </style>
