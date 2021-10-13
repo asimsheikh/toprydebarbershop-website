@@ -29,6 +29,7 @@ This project is a refactor of the site built in 2015.
 ## Log
 
  - 8/10/2021 - Had meeting with Fai around tech stack, tasks and general development process moving forward
+ - 12/10/2021 - Spoke to Sam about his business, he said he didnt want a booking site added to his website, but rather to add a link to his booking appointment app
 
 ## CI/CD Locations
 
