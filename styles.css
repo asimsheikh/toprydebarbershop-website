@@ -7,3 +7,61 @@ body {
   background-color: #000000f2;
   color: white;
 }
+
+h1 {
+  font-size: 3.5rem;
+}
+
+p {
+  font-size: 1.4rem;
+  color: #ffffffc7;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.hero {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+}
+
+.hero-item.main {
+  margin-top: 20rem;
+  margin-left: 5rem;
+  width: 60%;
+}
+
+.hero-item.right {
+  width: 40%;
+}
+#shaver {
+  height: 300px;
+  width: auto;
+  object-fit: contain;
+}
+
+.link-button {
+  font-size: 1.4rem;
+  text-decoration: none;
+  color: white;
+  border: solid 2px white;
+  padding: 1rem 2rem;
+  transition-duration: 200ms;
+}
+
+.link-button:hover {
+  color: black;
+  background-color: white;
+}
+
+.link-button.cta-button {
+  color: black;
+  background-color: white;
+}
+
+.link-button.cta-button:hover {
+  color: white;
+  background-color: black;
+}
