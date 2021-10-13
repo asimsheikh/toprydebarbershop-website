@@ -17,6 +17,8 @@
         padding: 10px;
         margin: 50px;
         display: flex;
+        flex-direction: row;
+        justify-content: center; /* can be center, space-between, space-around, space-evenly, flex-start, flex-end */
       }
 
       .item {
@@ -29,7 +31,7 @@
 
       @media screen and (max-width: 650px) {
         .container {
-          flex-direction: column;
+          flex-direction: row;
         }
       }
     </style>
