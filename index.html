@@ -30,13 +30,22 @@
       }
 
       .container {
+        background-color: grey;
         display: flex;
         flex-direction: row;
+        justify-content: flex-start;
+        align-items: stretch;
+        height: 100vh;
+      }
+
+      .item {
+        flex-grow: 1;
+        padding: 10px;
+        margin: 10px;
       }
 
       header {
         background-color: purple;
-        height: 10vh;
       }
 
       nav {
@@ -66,19 +75,25 @@
       footer {
         background-color: maroon;
       }
+
+      @media screen and (max-width: 650px) {
+        .container {
+          flex-direction: column;
+        }
+      }
     </style>
   </head>
 
   <body>
     <div class="container">
-      <header>header</header>
-      <nav>Nav</nav>
-      <section id="hero">Hero</section>
-      <section id="trading-hours">Trading Hours</section>
-      <section id="price-list">Price List</section>
-      <section id="contact-details">Contact Details</section>
-      <section id="map-location">Map Location</section>
-      <footer>Footer</footer>
+      <header class="item">header</header>
+      <nav class="item">Nav</nav>
+      <section class="item" id="hero">Hero</section>
+      <section class="item" id="trading-hours">Trading Hours</section>
+      <section class="item" id="price-list">Price List</section>
+      <section class="item" id="contact-details">Contact Details</section>
+      <section class="item" id="map-location">Map Location</section>
+      <footer class="item">Footer</footer>
     </div>
   </body>
 </html>
