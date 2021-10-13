@@ -19,6 +19,7 @@
         display: flex;
         flex-direction: row;
         justify-content: center; /* can be center, space-between, space-around, space-evenly, flex-start, flex-end */
+        align-items: center; /* if you dont set center then the all items are stretched to the largest height */
       }
 
       .item {
@@ -27,6 +28,10 @@
         font-size: 35px;
         padding: 10px;
         margin: 10px;
+      }
+
+      .items-3 {
+        height: 200px;
       }
 
       @media screen and (max-width: 650px) {
