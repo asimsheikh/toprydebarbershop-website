@@ -15,8 +15,10 @@ This project is a refactor of the site built in 2015.
   
  ### Asim
   - creating semantic html5 (completed 12/10/2021)
-  - Hero section
-  - Making maps static image
+  - Hero section (completed 13/10/2021)
+  - Price List (compled 14/10/2021)
+  - Location section (completed 14/10/2021)
+  - Making maps static image 
 
 ## Technology stack
   - html
