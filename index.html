@@ -24,7 +24,7 @@
       }
 
       body {
-        background-color: #000000f2;
+        background-color: #000000e6;
         color: white;
         font-family: 'Montserrat', sans-serif;
       }
@@ -35,7 +35,6 @@
       }
 
       .container {
-        background-color: #000000f2;
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
@@ -58,7 +57,6 @@
       }
 
       #hero {
-        background-color: #000000f2;
         display: flex;
         flex-direction: row;
       }
@@ -86,7 +84,6 @@
       }
 
       #price-list {
-        background-color: darkcyan;
       }
 
       #contact-details {
@@ -112,6 +109,10 @@
           padding-bottom: 2rem;
         }
 
+        .hero-main > h1 {
+          font-size: 2rem;
+        }
+
         .hero-image > img {
           width: 100%;
           display: none;
@@ -123,13 +124,22 @@
           color: black;
           background-color: white;
           border: solid 2px white;
-          padding: 1rem 2rem;
+          padding: 0.5rem 2rem;
           transition-duration: 200ms;
         }
 
         .link-button.cta-button:hover {
           color: black;
           background-color: white;
+        }
+
+        thead > tr {
+          text-align: left;
+        }
+
+        td {
+          background-color: blue;
+          padding: 10px;
         }
       }
     </style>
@@ -162,8 +172,57 @@
           />
         </div>
       </section>
+      <section class="item" id="price-list">
+        <h1>Price List</h1>
+        <br />
+        <table class="price-list-table">
+          <thead>
+            <tr class="price-list-header">
+              <th>Service</th>
+              <th>Price</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Normal Men's Cut</td>
+              <td>35</td>
+            </tr>
+            <tr>
+              <td>Fades</td>
+              <td>40</td>
+            </tr>
+            <tr>
+              <td>Razor Fades</td>
+              <td>40</td>
+            </tr>
+            <tr>
+              <td>Aged Pension Cuts</td>
+              <td>25</td>
+            </tr>
+            <tr>
+              <td>School Students</td>
+              <td>30</td>
+            </tr>
+            <tr>
+              <td>Kids Under 10</td>
+              <td>25</td>
+            </tr>
+            <tr>
+              <td>Face Shave</td>
+              <td>25</td>
+            </tr>
+            <tr>
+              <td>Beard Trim and Line Ups</td>
+              <td>25</td>
+            </tr>
+            <tr>
+              <td>Beard Trim</td>
+              <td>10</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
       <section class="item" id="trading-hours">Trading Hours</section>
-      <section class="item" id="price-list">Price List</section>
       <section class="item" id="contact-details">Contact Details</section>
       <section class="item" id="map-location">
         <h1>Our Location</h1>
