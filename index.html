@@ -1,295 +1,294 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Top Ryde Barber Shop</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta
-      name="description"
-      content="We are a babershop with the best fades, haircuts, styles and trims in the Sydney. located in Top Ryde Sydney."
-    />
-    <meta
-      name="google-site-verification"
-      content="U-qSmQqNPntzuM8OYh5w9BhNxojFoKpPGHLA9N9p9PQ"
-    />
-    <link rel="stylesheet" href="styles.css" />
-    <style>
-      @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&display=swap');
-    </style>
-    <style>
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
 
-      body {
-        background-color: #000000e6;
-        color: white;
-        font-family: 'Montserrat', sans-serif;
-      }
+<head>
+	<title>Top Ryde Barber Shop</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="description"
+		content="We are a babershop with the best fades, haircuts, styles and trims in the Sydney. located in Top Ryde Sydney." />
+	<meta name="google-site-verification" content="U-qSmQqNPntzuM8OYh5w9BhNxojFoKpPGHLA9N9p9PQ" />
+	<link rel="stylesheet" href="styles.css" />
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&display=swap');
+	</style>
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
 
-      p {
-        font-size: 1rem;
-        color: #ffffffc7;
-      }
+		body {
+			background-color: #000000e6;
+			/* background-color: #1B1B1B; looks nice */
+			color: white;
+			font-family: 'Montserrat', sans-serif;
+		}
 
-      .container {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: stretch;
-        height: 100vh;
-      }
+		p {
+			font-size: 1rem;
+			color: #ffffffc7;
+		}
 
-      .item {
-        flex-grow: 1;
-        padding: 10px;
-        margin: 10px;
-      }
+		.container {
+			display: flex;
+			flex-direction: column;
 
-      header {
-        background-color: purple;
-      }
+			/* These properties not needed */
+			/* justify-content: flex-start;
+     			align-items: stretch; */
+			/* This property is causing a lot of problems
+      			height: 100vh; */
+		}
 
-      nav {
-      }
+		.item {
+			flex-grow: 1;
+			padding: 10px;
+			margin: 10px;
+		}
 
-      #hero {
-        display: flex;
-        flex-direction: row;
-      }
+		/* #hero {
+      display: flex;
+      flex-direction: row;
+    } */
 
-      .hero-image > img {
-        width: 100%;
-        height: auto;
-        margin-top: 2rem;
-      }
+		.hero-image>img {
+			width: 100%;
+			height: auto;
+			margin-top: 2rem;
+		}
 
-      .link-button {
-        font-size: 1.4rem;
-        text-decoration: none;
-        color: white;
-        border: solid 2px white;
-        padding: 1rem 2rem;
-        transition-duration: 200ms;
-      }
+		.link-button {
+			font-size: 1.4rem;
+			text-decoration: none;
+			color: white;
+			border: solid 2px white;
+			padding: 1rem 2rem;
+			transition-duration: 200ms;
+		}
 
-      .link-button:hover {
-        color: black;
-        background-color: white;
-      }
+		.link-button:hover {
+			color: black;
+			background-color: white;
+		}
 
-      #trading-hours {
-      }
+		/* #trading-hours {}
 
-      #price-list {
-      }
+		#price-list {} */
 
-      #contact-details {
-        background-color: gray;
-      }
+		#contact-details {
+			background-color: gray;
+		}
 
-      #map-location {
-        min-height: 400px;
-      }
+		#map-location {
+			min-height: 400px;
+		}
 
-      footer {
-        background-color: maroon;
-      }
+		footer {
+			background-color: maroon;
+		}
 
-      @media screen and (max-width: 650px) {
-        .container {
-          flex-direction: column;
-        }
+		@media screen and (max-width: 650px) {
+			.logo {
+				font-weight: 800;
+			}
 
-        header {
-          display: none;
-        }
+			#hero {
+				display: flex;
+				flex-direction: column;
+				padding-bottom: 2rem;
+				margin-top: 4rem;
+			}
 
-        nav {
-        }
+			.hero-main>h1 {
+				font-size: 2.3rem;
+			}
 
-        .logo {
-          font-weight: 800;
-        }
+			.hero-image>img {
+				width: 100%;
+				height: auto;
+				margin-top: 2rem;
+			}
 
-        #hero {
-          display: flex;
-          flex-direction: column;
-          padding-bottom: 2rem;
-          margin-top: 4rem;
-        }
+			.link-button.cta-button {
+				font-size: 1rem;
+				text-decoration: none;
+				color: black;
+				background-color: white;
+				border: solid 2px white;
+				padding: 0.5rem 2rem;
+				transition-duration: 200ms;
+			}
 
-        .hero-main > h1 {
-          font-size: 2.3rem;
-        }
+			.link-button.cta-button:hover {
+				color: black;
+				background-color: white;
+			}
 
-        .hero-image > img {
-          width: 100%;
-          height: auto;
-          margin-top: 2rem;
-        }
+			thead>tr {
+				text-align: left;
+			}
 
-        .link-button.cta-button {
-          font-size: 1rem;
-          text-decoration: none;
-          color: black;
-          background-color: white;
-          border: solid 2px white;
-          padding: 0.5rem 2rem;
-          transition-duration: 200ms;
-        }
+			td {
+				padding: 0.2rem;
+			}
+		}
+	</style>
+</head>
 
-        .link-button.cta-button:hover {
-          color: black;
-          background-color: white;
-        }
+<body>
+	<div class="container">
 
-        thead > tr {
-          text-align: left;
-        }
+		<nav class="navbar">
+			<div class="brand-logo">
+				<img src="images/logo_black_final.jpg" alt="Top Ryde Logo" class="logo-image">
+			</div>
 
-        td {
-          padding: 0.2rem;
-        }
-      }
-    </style>
-  </head>
+			<a href="#" class="toggle-button">
+				<span class="bar"></span>
+				<span class="bar"></span>
+				<span class="bar"></span>
+			</a>
 
-  <body>
-    <div class="container">
-      <header class="item">header</header>
-      <nav class="item"><span class="logo">TOPRYDE</span>* Barbershop</nav>
-      <section class="item" id="hero">
-        <div class="hero-main">
-          <h1>The Best Fades</h1>
-          <h1>Cuts, Trims & Shaves</h1>
-          <br />
-          <p>
-            We are a group of professional barbers in Ryde that care. An
-            institution that has been in the business for over 50 years
-          </p>
-          <p>
-            <br />
-            <br />
-            <a class="link-button cta-button" href="/">Book an appointment</a>
-          </p>
-        </div>
-        <div class="hero-image">
-          <img
-            id="shaver"
-            src="https://images.unsplash.com/photo-1532710093739-9470acff878f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"
-            alt="a shaver"
-          />
-        </div>
-      </section>
-      <section class="item" id="price-list">
-        <h1>Price List</h1>
-        <br />
-        <table class="price-list-table">
-          <thead>
-            <tr class="price-list-header">
-              <th>Service</th>
-              <th>Price</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Normal Men's Cut</td>
-              <td>35</td>
-            </tr>
-            <tr>
-              <td>Fades</td>
-              <td>40</td>
-            </tr>
-            <tr>
-              <td>Razor Fades</td>
-              <td>40</td>
-            </tr>
-            <tr>
-              <td>Aged Pension Cuts</td>
-              <td>25</td>
-            </tr>
-            <tr>
-              <td>School Students</td>
-              <td>30</td>
-            </tr>
-            <tr>
-              <td>Kids Under 10</td>
-              <td>25</td>
-            </tr>
-            <tr>
-              <td>Face Shave</td>
-              <td>25</td>
-            </tr>
-            <tr>
-              <td>Beard Trim and Line Ups</td>
-              <td>25</td>
-            </tr>
-            <tr>
-              <td>Beard Trim</td>
-              <td>10</td>
-            </tr>
-          </tbody>
-        </table>
-      </section>
-      <section class="item" id="trading-hours">
-        <h1>Trading Hours</h1>
-        <br />
-        <table class="price-list-table">
-          <thead>
-            <tr class="price-list-header">
-              <th>Day</th>
-              <th>Time</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Monday</td>
-              <td>8.30am - 5.00pm</td>
-            </tr>
-            <tr>
-              <td>Tuesday</td>
-              <td>8.30am - 5.00pm</td>
-            </tr>
-            <tr>
-              <td>Wednesday</td>
-              <td>8.30am - 5.00pm</td>
-            </tr>
-            <tr>
-              <td>Thursday</td>
-              <td>8.30am - 6.00pm</td>
-            </tr>
-            <tr>
-              <td>Friday</td>
-              <td>8.30am - 5.30pm</td>
-            </tr>
-            <tr>
-              <td>Saturday</td>
-              <td>7.30am - 2.30pm</td>
-            </tr>
-            <tr>
-              <td>Sunday</td>
-              <td>Closed</td>
-            </tr>
-          </tbody>
-        </table>
-      </section>
-      <section class="item" id="contact-details">Contact Details</section>
-      <section class="item" id="map-location">
-        <h1>Our Location</h1>
-        <p>4 Church Street</p>
-        <p>RYDE NSW 2112</p>
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13259.268490600076!2d151.10357889235834!3d-33.81703216288531!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x516122b7b00dd9f2!2sTop+Ryde+Barber+Shop!5e0!3m2!1sen!2sau!4v1509249841346"
-          width="100%"
-          height="80%"
-          frameborder="0"
-          allowfullscreen
-        ></iframe>
-      </section>
-      <footer class="item">Footer</footer>
-    </div>
-  </body>
+			<div class="navbar-links">
+				<ul>
+					<li><a href="">Home</a></li>
+					<li><a href="">Services</a></li>
+					<li><a href="">Prices</a></li>
+					<li><a href="">Gallery</a></li>
+					<li><a href="">Contact</a></li>
+				</ul>
+			</div>
+		</nav>
+
+		<section class="item" id="hero">
+			<div class="hero-main">
+				<h1>The Best Fades</h1>
+				<h1>Cuts, Trims & Shaves</h1>
+				<br />
+				<p>
+					We are a group of professional barbers in Ryde that care. An
+					institution that has been in the business for over 50 years
+				</p>
+				<p>
+					<br />
+					<br />
+					<a class="link-button cta-button" href="/">Book an appointment</a>
+				</p>
+			</div>
+			<div class="hero-image">
+				<img id="shaver"
+					src="https://images.unsplash.com/photo-1532710093739-9470acff878f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"
+					alt="a shaver" />
+			</div>
+		</section>
+		<section class="item" id="price-list">
+			<h1>Price List</h1>
+			<br />
+			<table class="price-list-table">
+				<thead>
+					<tr class="price-list-header">
+						<th>Service</th>
+						<th>Price</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Normal Men's Cut</td>
+						<td>35</td>
+					</tr>
+					<tr>
+						<td>Fades</td>
+						<td>40</td>
+					</tr>
+					<tr>
+						<td>Razor Fades</td>
+						<td>40</td>
+					</tr>
+					<tr>
+						<td>Aged Pension Cuts</td>
+						<td>25</td>
+					</tr>
+					<tr>
+						<td>School Students</td>
+						<td>30</td>
+					</tr>
+					<tr>
+						<td>Kids Under 10</td>
+						<td>25</td>
+					</tr>
+					<tr>
+						<td>Face Shave</td>
+						<td>25</td>
+					</tr>
+					<tr>
+						<td>Beard Trim and Line Ups</td>
+						<td>25</td>
+					</tr>
+					<tr>
+						<td>Beard Trim</td>
+						<td>10</td>
+					</tr>
+				</tbody>
+			</table>
+		</section>
+		<section class="item" id="trading-hours">
+			<h1>Trading Hours</h1>
+			<br />
+			<table class="price-list-table">
+				<thead>
+					<tr class="price-list-header">
+						<th>Day</th>
+						<th>Time</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Monday</td>
+						<td>8.30am - 5.00pm</td>
+					</tr>
+					<tr>
+						<td>Tuesday</td>
+						<td>8.30am - 5.00pm</td>
+					</tr>
+					<tr>
+						<td>Wednesday</td>
+						<td>8.30am - 5.00pm</td>
+					</tr>
+					<tr>
+						<td>Thursday</td>
+						<td>8.30am - 6.00pm</td>
+					</tr>
+					<tr>
+						<td>Friday</td>
+						<td>8.30am - 5.30pm</td>
+					</tr>
+					<tr>
+						<td>Saturday</td>
+						<td>7.30am - 2.30pm</td>
+					</tr>
+					<tr>
+						<td>Sunday</td>
+						<td>Closed</td>
+					</tr>
+				</tbody>
+			</table>
+		</section>
+		<section class="item" id="contact-details">Contact Details</section>
+		<section class="item" id="map-location">
+			<h1>Our Location</h1>
+			<p>4 Church Street</p>
+			<p>RYDE NSW 2112</p>
+			<iframe
+				src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13259.268490600076!2d151.10357889235834!3d-33.81703216288531!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x516122b7b00dd9f2!2sTop+Ryde+Barber+Shop!5e0!3m2!1sen!2sau!4v1509249841346"
+				width="100%" height="80%" frameborder="0" allowfullscreen></iframe>
+		</section>
+		<footer class="item">Footer</footer>
+	</div>
+
+	<!-- Attaching js script -->
+	<script src="app.js"></script>
+</body>
+
 </html>
