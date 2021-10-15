@@ -12,7 +12,6 @@
       name="google-site-verification"
       content="U-qSmQqNPntzuM8OYh5w9BhNxojFoKpPGHLA9N9p9PQ"
     />
-    <link rel="stylesheet" href="styles.css" />
     <style>
       @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&display=swap');
     </style>
@@ -60,7 +59,7 @@
         flex-direction: row;
       }
 
-      .hero-image > img {
+      .hero-image img {
         width: 100%;
         height: auto;
         margin-top: 2rem;
@@ -110,6 +109,7 @@
         nav {
           display: flex;
           align-items: center;
+          justify-content: flex-end;
         }
 
         nav ul {
@@ -127,11 +127,11 @@
           margin-top: 4rem;
         }
 
-        .hero-main > h1 {
+        .hero-main h1 {
           font-size: 2.3rem;
         }
 
-        .hero-image > img {
+        .hero-image img {
           width: 100%;
           height: auto;
           margin-top: 2rem;
@@ -167,7 +167,7 @@
     <div class="container">
       <header class="item">header</header>
       <nav class="item">
-        <p><span class="logo">TOPRYDE</span>* Barbershop</p>
+        <!-- <span class="logo">TOPRYDE</span>* Barbershop -->
         <ul>
           Services
         </ul>
@@ -205,15 +205,9 @@
         </div>
       </section>
       <section class="item" id="price-list">
-        <h1>Price List</h1>
+        <h1>Prices</h1>
         <br />
         <table class="price-list-table">
-          <thead>
-            <tr class="price-list-header">
-              <th>Service</th>
-              <th>Price</th>
-            </tr>
-          </thead>
           <tbody>
             <tr>
               <td>Normal Men's Cut</td>
@@ -258,12 +252,6 @@
         <h1>Trading Hours</h1>
         <br />
         <table class="price-list-table">
-          <thead>
-            <tr class="price-list-header">
-              <th>Day</th>
-              <th>Time</th>
-            </tr>
-          </thead>
           <tbody>
             <tr>
               <td>Monday</td>
