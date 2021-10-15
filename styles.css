@@ -66,7 +66,7 @@
 }
 
 /* These properties are for the responsive menu */
-@media screen and (max-width: 800px) {
+/* @media screen and (max-width: 800px) {
   .logo-image {
     width: 20%;
   }
@@ -99,4 +99,4 @@
     height: 200px;
     width: 200px;
   }
-}
+} */
