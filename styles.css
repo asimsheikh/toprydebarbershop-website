@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #1b1b1b;
+  background-color: black;
   color: white;
   min-height: 80px;
 }
@@ -79,7 +79,7 @@
   }
   .navbar {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
   }
   .navbar-links ul {
     flex-direction: column;
@@ -96,7 +96,7 @@
     height: 100%;
   }
   .brand-logo {
-    height: 200px;
-    width: 200px;
+    height: 150px;
+    width: 150px;
   }
 }
