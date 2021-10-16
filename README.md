@@ -8,7 +8,7 @@ This project is a refactor of the site built in 2015.
 ## Tasks 
 
  ### Fai
-  - header
+  - header (completed 16/10/21)
   - footer
   - gallery feature
   - bootstrap removal from development branch (completed 10/10/2021)
