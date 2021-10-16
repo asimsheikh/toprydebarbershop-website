@@ -65,6 +65,10 @@
   max-width: 100%;
 }
 
+.navbar-links {
+  transition: height 0.5s;
+}
+
 /* These properties are for the responsive menu */
 @media screen and (max-width: 800px) {
   .logo-image {
@@ -74,8 +78,10 @@
     display: flex;
   }
   .navbar-links {
-    display: none;
+    display: block;
     width: 100%;
+    height: 0;
+    visibility: hidden;
   }
   .navbar {
     flex-direction: column;
@@ -89,8 +95,10 @@
     text-align: center;
   }
   .navbar-links.active {
-    display: flex;
+    visibility: visible;
+    height: 256px;
   }
+
   .logo-image {
     width: 100%;
     height: 100%;
