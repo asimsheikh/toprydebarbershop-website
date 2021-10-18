@@ -52,6 +52,9 @@
       }
 
       nav {
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
       }
 
       #hero {
@@ -109,7 +112,7 @@
         nav {
           display: flex;
           align-items: center;
-          justify-content: flex-end;
+          justify-content: flex-start;
         }
 
         nav ul {
@@ -135,6 +138,24 @@
           width: 100%;
           height: auto;
           margin-top: 2rem;
+        }
+
+        .reviews {
+          margin-top: 2rem;
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          justify-content: center;
+        }
+
+        .small-text {
+          font-size: 0.8rem;
+          color: lightgrey;
+        }
+
+        .google-logo {
+          width: 100px;
+          height: auto;
         }
 
         .link-button.cta-button {
@@ -166,21 +187,7 @@
   <body>
     <div class="container">
       <header class="item">header</header>
-      <nav class="item">
-        <!-- <span class="logo">TOPRYDE</span>* Barbershop -->
-        <ul>
-          Services
-        </ul>
-        <ul>
-          Prices
-        </ul>
-        <ul>
-          Gallery
-        </ul>
-        <ul>
-          Contact
-        </ul>
-      </nav>
+      <nav class="item"><span class="logo">TOPRYDE</span>* Barbershop</nav>
       <section class="item" id="hero">
         <div class="hero-main">
           <h1>The Best Fades</h1>
@@ -196,12 +203,24 @@
             <a class="link-button cta-button" href="/">Book an appointment</a>
           </p>
         </div>
-        <div class="hero-image">
-          <img
-            id="shaver"
-            src="https://images.unsplash.com/photo-1532710093739-9470acff878f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"
-            alt="a shaver"
-          />
+      </section>
+      <section class="item" id="reviews">
+        <div class="reviews">
+          <h1>What our customers say</h1>
+          <br />
+          <div>
+            <img
+              class="google-logo"
+              src="https://upload.wikimedia.org/wikipedia/commons/8/8b/Google_2015_logo_colorless_mourning_period.svg"
+              alt="Google Logo"
+            />
+          </div>
+          <div>
+            <p>
+              4.8 &#9733;&#9733;&#9733;&#9733;&#9733;
+              <span class="small-text">182 Reviews</span>
+            </p>
+          </div>
         </div>
       </section>
       <section class="item" id="price-list">
