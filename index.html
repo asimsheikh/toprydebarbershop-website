@@ -33,7 +33,12 @@
         color: #ffffffc7;
       }
 
-      @media screen and (max-width: 550px) {
+      @media screen and (min-width: 550px) {
+        p {
+          font-size: 1.1rem;
+          color: #ffffffc7;
+        }
+
         .container {
           display: flex;
           flex-direction: column;
@@ -42,8 +47,8 @@
 
         .item {
           flex-grow: 1;
-          padding: 10px;
-          margin: 10px;
+          padding: 1rem;
+          margin: 1rem;
         }
 
         header {
@@ -56,9 +61,25 @@
           justify-content: flex-start;
         }
 
+        .logo {
+          font-weight: 800;
+        }
+
         #hero {
           display: flex;
           flex-direction: row;
+          margin: 2rem 4rem;
+        }
+
+        .hero-main {
+          font-size: 2rem;
+          margin-top: 2rem;
+          flex: 3;
+        }
+
+        .hero-image {
+          margin-left: 2rem;
+          flex: 4;
         }
 
         .hero-image img {
@@ -67,18 +88,19 @@
           margin-top: 2rem;
         }
 
-        .link-button {
-          font-size: 1.4rem;
+        .link-button.cta-button {
+          font-size: 1.2rem;
           text-decoration: none;
-          color: white;
+          color: black;
+          background-color: white;
           border: solid 2px white;
-          padding: 1rem 2rem;
+          padding: 1rem 3rem;
           transition-duration: 200ms;
         }
 
-        .link-button:hover {
-          color: black;
-          background-color: white;
+        .link-button.cta-button:hover {
+          color: white;
+          background-color: #000000e6;
         }
 
         #trading-hours {
@@ -109,6 +131,7 @@
       @media screen and (max-width: 550px) {
         .container {
           flex-direction: column;
+          justify-content: flex-start;
         }
 
         header {
@@ -129,6 +152,12 @@
           font-weight: 800;
         }
 
+        .item {
+          flex-grow: 1;
+          padding: 1rem;
+          margin: 1rem;
+        }
+
         #hero {
           display: flex;
           flex-direction: column;
@@ -141,9 +170,7 @@
         }
 
         .hero-image img {
-          width: 100%;
-          height: auto;
-          margin-top: 2rem;
+          display: none;
         }
 
         .reviews {
@@ -202,7 +229,7 @@
 
   <body>
     <div class="container">
-      <header class="item">header</header>
+      <!-- <header class="item">header</header> -->
       <nav class="item"><span class="logo">TOPRYDE</span>&nbsp;Barbershop</nav>
       <section class="item" id="hero">
         <div class="hero-main">
@@ -215,8 +242,13 @@
             the business for over 50 years
           </p>
           <br />
-          <br />
           <a class="link-button cta-button" href="/">Book an appointment</a>
+        </div>
+        <div class="hero-image">
+          <img
+            src="https://images.unsplash.com/photo-1590540179852-2110a54f813a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"
+            alt=""
+          />
         </div>
       </section>
       <section class="item" id="reviews">
