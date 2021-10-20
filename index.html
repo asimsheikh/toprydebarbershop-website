@@ -103,6 +103,56 @@
           background-color: #000000e6;
         }
 
+        .reviews {
+          margin-top: -3rem;
+          margin-left: 7rem;
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          justify-content: center;
+        }
+
+        #testimonials {
+          margin: 0rem 5rem;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        }
+
+        #testimonials h1 {
+          font-size: 2rem;
+        }
+
+        .testimonial-list {
+          margin-top: 2rem;
+          display: flex;
+        }
+
+        .testimonial {
+          flex: 1;
+          padding: 20px 10px 10px 0px;
+        }
+
+        .testimonial-name {
+          font-weight: 600;
+          padding: 10px 0px;
+        }
+
+        .small-text {
+          font-size: 0.8rem;
+          color: lightgrey;
+        }
+
+        .google-logo {
+          width: 160px;
+          height: auto;
+        }
+
+        .social {
+          /* margin-left: 6rem; */
+        }
+
         #trading-hours {
         }
 
@@ -163,14 +213,20 @@
           flex-direction: column;
           padding-bottom: 2rem;
           margin-top: 4rem;
+          margin-right: 2rem;
         }
 
         .hero-main h1 {
           font-size: 2.3rem;
+          margin-right: 2rem;
         }
 
         .hero-image img {
           display: none;
+        }
+
+        .sub-hero-text {
+          margin-bottom: 1rem;
         }
 
         .reviews {
@@ -236,7 +292,7 @@
           <h1>The Best Haircuts</h1>
           <h1>Razor Fades, Trims & Shaves</h1>
           <br />
-          <p>
+          <p class="sub-hero-text">
             We are a group of professional barbers in Sydney that care about the
             craft of the perfect cut and fade. An institution that has been in
             the business for over 50 years
@@ -268,27 +324,40 @@
       </section>
       <section class="item" id="testimonials">
         <h1>Our customers &#129505; our work</h1>
-        <div class="testimonial">
-          <div class="testimonial-text">
-            <p>
-              Welcome to Top Ryde City Ladies & Gentleman. The place where this
-              legendary barber is cutting and fading, while also perfecting the
-              art of cutting hair right by TOWN. 5/5 stars
-            </p>
+        <div class="testimonial-list">
+          <div class="testimonial">
+            <div class="testimonial-text">
+              <p>
+                Welcome to Top Ryde City Ladies & Gentleman. The place where
+                this legendary barber is cutting and fading, while also
+                perfecting the art of cutting hair right by TOWN. 5/5 stars
+              </p>
+            </div>
+            <div class="testimonial-name">Tyler Skeen</div>
+            <div class="testimonial-photo"></div>
           </div>
-          <div class="testimonial-name">Tyler Skeen</div>
-          <div class="testimonial-photo"></div>
-        </div>
-        <div class="testimonial">
-          <div class="testimonial-text">
-            <p>
-              I have been coming to Sam for just over 10 years. He is a
-              gentleman and an absolute perfectionist ... a perfect haircut
-              every time. I highly recommend Top Ryde Barber Shop
-            </p>
+          <div class="testimonial">
+            <div class="testimonial-text">
+              <p>
+                I have been coming to Sam for just over 10 years. He is a
+                gentleman and an absolute perfectionist ... a perfect haircut
+                every time. I highly recommend Top Ryde Barber Shop
+              </p>
+            </div>
+            <div class="testimonial-name">Matthew L</div>
+            <div class="testimonial-photo"></div>
           </div>
-          <div class="testimonial-name">Matthew L</div>
-          <div class="testimonial-photo"></div>
+          <div class="testimonial">
+            <div class="testimonial-text">
+              <p>
+                Welcome to Top Ryde City Ladies & Gentleman. The place where
+                this legendary barber is cutting and fading, while also
+                perfecting the art of cutting hair right by TOWN. 5/5 stars
+              </p>
+            </div>
+            <div class="testimonial-name">Tyler Skeen</div>
+            <div class="testimonial-photo"></div>
+          </div>
         </div>
       </section>
       <section class="item" id="price-list">
