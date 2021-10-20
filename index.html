@@ -33,74 +33,77 @@
         color: #ffffffc7;
       }
 
-      .container {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: stretch;
-        height: 100vh;
-      }
+      @media screen and (max-width: 550px) {
+        .container {
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-start;
+        }
 
-      .item {
-        flex-grow: 1;
-        padding: 10px;
-        margin: 10px;
-      }
+        .item {
+          flex-grow: 1;
+          padding: 10px;
+          margin: 10px;
+        }
 
-      header {
-        background-color: purple;
-      }
+        header {
+          background-color: purple;
+        }
 
-      nav {
-        display: flex;
-        align-items: flex-start;
-        justify-content: flex-start;
-      }
+        nav {
+          display: flex;
+          align-items: flex-start;
+          justify-content: flex-start;
+        }
 
-      #hero {
-        display: flex;
-        flex-direction: row;
-      }
+        #hero {
+          display: flex;
+          flex-direction: row;
+        }
 
-      .hero-image img {
-        width: 100%;
-        height: auto;
-        margin-top: 2rem;
-      }
+        .hero-image img {
+          width: 100%;
+          height: auto;
+          margin-top: 2rem;
+        }
 
-      .link-button {
-        font-size: 1.4rem;
-        text-decoration: none;
-        color: white;
-        border: solid 2px white;
-        padding: 1rem 2rem;
-        transition-duration: 200ms;
-      }
+        .link-button {
+          font-size: 1.4rem;
+          text-decoration: none;
+          color: white;
+          border: solid 2px white;
+          padding: 1rem 2rem;
+          transition-duration: 200ms;
+        }
 
-      .link-button:hover {
-        color: black;
-        background-color: white;
-      }
+        .link-button:hover {
+          color: black;
+          background-color: white;
+        }
 
-      #trading-hours {
-      }
+        #trading-hours {
+        }
 
-      #price-list {
-      }
+        #price-list {
+        }
 
-      #contact-details {
-      }
+        #contact-details {
+        }
 
-      #map-location {
-        min-height: 400px;
-      }
+        #map-location {
+          min-height: 400px;
+        }
 
-      footer {
-        background-color: maroon;
-      }
+        footer {
+          background-color: maroon;
+        }
 
-      .social-logos {
-        background-color: purple;
+        .social-logos {
+          background-color: purple;
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+        }
       }
 
       @media screen and (max-width: 550px) {
