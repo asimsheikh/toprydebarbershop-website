@@ -155,7 +155,7 @@
 
         #price-list {
           margin-left: 7rem;
-          display: flex;
+          display: none;
           flex-direction: column;
           align-items: center;
           justify-content: center;
@@ -165,24 +165,39 @@
           font-size: 2rem;
         }
 
+        .services h1 {
+          font-size: 2rem;
+          text-align: center;
+        }
+
+        .service-list {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          flex-wrap: wrap;
+        }
+
+        .service-item {
+          width: 40%;
+          padding: 2rem;
+        }
         #trading-hours h1 {
           font-size: 2rem;
         }
 
         #trading-hours {
-          margin-left: 7rem;
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          justify-content: center;
+          width: 30%;
+          padding-left: 2rem;
         }
 
-        .contact-map {
+        .trading-contact-map {
           display: flex;
-          justify-content: space-around;
+          justify-content: center;
+          flex-wrap: wrap;
         }
 
         #contact-details {
+          width: 40%;
         }
 
         #contact-details h1 {
@@ -190,11 +205,12 @@
         }
 
         #map-location {
-          min-width: 700px;
+          width: 70%;
           height: 500px;
         }
 
         #map-location h1 {
+          text-align: center;
           font-size: 2rem;
         }
 
@@ -438,42 +454,96 @@
           </tbody>
         </table>
       </section>
-      <section class="item" id="trading-hours">
-        <h1>Trading Hours</h1>
-        <table class="price-list-table">
-          <tbody>
-            <tr>
-              <td>Monday</td>
-              <td>8.30am - 5.00pm</td>
-            </tr>
-            <tr>
-              <td>Tuesday</td>
-              <td>8.30am - 5.00pm</td>
-            </tr>
-            <tr>
-              <td>Wednesday</td>
-              <td>8.30am - 5.00pm</td>
-            </tr>
-            <tr>
-              <td>Thursday</td>
-              <td>8.30am - 6.00pm</td>
-            </tr>
-            <tr>
-              <td>Friday</td>
-              <td>8.30am - 5.30pm</td>
-            </tr>
-            <tr>
-              <td>Saturday</td>
-              <td>7.30am - 2.30pm</td>
-            </tr>
-            <tr>
-              <td>Sunday</td>
-              <td>Closed</td>
-            </tr>
-          </tbody>
-        </table>
+      <section class="item services">
+        <h1>Our services and prices</h1>
+        <div class="service-list">
+          <div class="service-item">
+            <h4>Normal Men's Cut</h4>
+            <p>
+              full consultation as standard - taking into consideration your
+              lifestyle, face shape and hair type. the cut, finishing and
+              styling will ensure you leave feeling as good as you look
+            </p>
+          </div>
+          <div class="service-item">
+            <h4>Fades</h4>
+            <p>
+              full consultation as standard - taking into consideration your
+              lifestyle, face shape and hair type. the cut, finishing and
+              styling will ensure you leave feeling as good as you look
+            </p>
+          </div>
+          <div class="service-item">
+            <h4>Razor Fades</h4>
+            <p>
+              full consultation as standard - taking into consideration your
+              lifestyle, face shape and hair type. the cut, finishing and
+              styling will ensure you leave feeling as good as you look
+            </p>
+          </div>
+          <div class="service-item">
+            <h4>Face Shave</h4>
+            <p>
+              full consultation as standard - taking into consideration your
+              lifestyle, face shape and hair type. the cut, finishing and
+              styling will ensure you leave feeling as good as you look
+            </p>
+          </div>
+          <div class="service-item">
+            <h4>Beard Trims</h4>
+            <p>
+              full consultation as standard - taking into consideration your
+              lifestyle, face shape and hair type. the cut, finishing and
+              styling will ensure you leave feeling as good as you look
+            </p>
+          </div>
+          <div class="service-item">
+            <h4>Beard Trims and Lineups</h4>
+            <p>
+              full consultation as standard - taking into consideration your
+              lifestyle, face shape and hair type. the cut, finishing and
+              styling will ensure you leave feeling as good as you look
+            </p>
+          </div>
+        </div>
       </section>
-      <div class="item contact-map">
+      <div class="item trading-contact-map">
+        <section class="item" id="trading-hours">
+          <h1>Trading Hours</h1>
+          <br />
+          <table class="price-list-table">
+            <tbody>
+              <tr>
+                <td>Monday</td>
+                <td>8.30am - 5.00pm</td>
+              </tr>
+              <tr>
+                <td>Tuesday</td>
+                <td>8.30am - 5.00pm</td>
+              </tr>
+              <tr>
+                <td>Wednesday</td>
+                <td>8.30am - 5.00pm</td>
+              </tr>
+              <tr>
+                <td>Thursday</td>
+                <td>8.30am - 6.00pm</td>
+              </tr>
+              <tr>
+                <td>Friday</td>
+                <td>8.30am - 5.30pm</td>
+              </tr>
+              <tr>
+                <td>Saturday</td>
+                <td>7.30am - 2.30pm</td>
+              </tr>
+              <tr>
+                <td>Sunday</td>
+                <td>Closed</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
         <section class="item" id="contact-details">
           <h1>How to contact us</h1>
           <br />
