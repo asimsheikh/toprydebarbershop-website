@@ -217,9 +217,21 @@
         }
 
         #trading-hours table {
-          font-size: 1rem;
+          font-size: 1.1rem;
           color: #ffffffc7;
           border-collapse: collapse;
+        }
+
+        #trading-hours th {
+          text-align: left;
+          display: none;
+        }
+
+        #trading-hours table,
+        th,
+        td {
+          border-bottom: 1px solid #ffffff28;
+          padding: 0.5rem 0.5rem;
         }
 
         .trading-contact-map {
@@ -234,6 +246,8 @@
 
         #contact-details {
           width: 40%;
+          line-height: 2.4rem;
+          padding-left: 5rem;
         }
 
         #contact-details h1 {
@@ -251,14 +265,11 @@
         }
 
         footer {
-          background-color: maroon;
         }
 
         .social-logos {
-          background-color: purple;
           display: flex;
-          justify-content: flex-start;
-          align-items: center;
+          justify-content: space-around;
         }
       }
 
@@ -556,7 +567,7 @@
       </section>
       <h1 style="text-align: center">Our contact details and location</h1>
       <div class="item trading-contact-map">
-        <section class="item" id="trading-hours">
+        <section id="trading-hours">
           <table>
             <tr>
               <th>Day</th>
@@ -600,9 +611,10 @@
             </tr>
           </table>
         </section>
-        <section class="item" id="contact-details">
+        <section id="contact-details">
           <p>4 Church Street</p>
           <p>RYDE NSW 2112</p>
+          <p>Sydney Australia</p>
           <br />
           <p>owner: Sam Sakar (Head Barber)</p>
           <p>tel:(02) 9809 4807</p>
