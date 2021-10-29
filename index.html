@@ -112,7 +112,9 @@
         }
 
         #testimonials {
-          margin: 0rem 5rem;
+          background-color: #2f2e2e;
+          margin: 2rem 0rem;
+          padding: 2rem 2rem;
           display: flex;
           flex-direction: column;
           justify-content: center;
@@ -181,6 +183,30 @@
           width: 40%;
           padding: 2rem;
         }
+
+        #gallery {
+          background-color: #2f2e2e;
+          margin: 2rem 0rem;
+          padding: 5rem 2rem;
+          display: flex;
+          justify-content: center;
+          flex-wrap: wrap;
+        }
+
+        #gallery h1 {
+          width: 100%;
+          font-size: 2rem;
+          margin-bottom: 2rem;
+          text-align: center;
+        }
+
+        .gallery-image {
+          width: 20%;
+          height: 200px;
+          background-color: lightpink;
+          margin: 0.5rem;
+        }
+
         #trading-hours h1 {
           font-size: 2rem;
         }
@@ -194,6 +220,10 @@
           display: flex;
           justify-content: center;
           flex-wrap: wrap;
+        }
+
+        .trading-contact-map h1 {
+          font-size: 2rem;
         }
 
         #contact-details {
@@ -454,7 +484,7 @@
           </tbody>
         </table>
       </section>
-      <section class="item services">
+      <section class="item services" id="services">
         <h1>Our services and prices</h1>
         <div class="service-list">
           <div class="service-item">
@@ -507,55 +537,37 @@
           </div>
         </div>
       </section>
+      <section class="item" id="gallery">
+        <h1>Our work</h1>
+        <div class="gallery-image">First view</div>
+        <div class="gallery-image">First view</div>
+        <div class="gallery-image">First view</div>
+        <div class="gallery-image">First view</div>
+        <div class="gallery-image">First view</div>
+        <div class="gallery-image">First view</div>
+        <div class="gallery-image">First view</div>
+        <div class="gallery-image">First view</div>
+      </section>
+      <h1 style="text-align: center">Our contact details and location</h1>
       <div class="item trading-contact-map">
         <section class="item" id="trading-hours">
-          <h1>Trading Hours</h1>
-          <br />
-          <table class="price-list-table">
-            <tbody>
-              <tr>
-                <td>Monday</td>
-                <td>8.30am - 5.00pm</td>
-              </tr>
-              <tr>
-                <td>Tuesday</td>
-                <td>8.30am - 5.00pm</td>
-              </tr>
-              <tr>
-                <td>Wednesday</td>
-                <td>8.30am - 5.00pm</td>
-              </tr>
-              <tr>
-                <td>Thursday</td>
-                <td>8.30am - 6.00pm</td>
-              </tr>
-              <tr>
-                <td>Friday</td>
-                <td>8.30am - 5.30pm</td>
-              </tr>
-              <tr>
-                <td>Saturday</td>
-                <td>7.30am - 2.30pm</td>
-              </tr>
-              <tr>
-                <td>Sunday</td>
-                <td>Closed</td>
-              </tr>
-            </tbody>
-          </table>
+          <p>Monday 8.30am 5.00pm</p>
+          <p>Tuesday 8.30am 5.00pm</p>
+          <p>Wednesday 8.30am 5.00pm</p>
+          <p>Thursday 8.30am 5.00pm</p>
+          <p>Friday 8.30am 5.00pm</p>
+          <p>Saturday 8.30am 5.00pm</p>
+          <p>Sunday Closed</p>
         </section>
         <section class="item" id="contact-details">
-          <h1>How to contact us</h1>
-          <br />
           <p>4 Church Street</p>
           <p>RYDE NSW 2112</p>
           <br />
-          <p>Sam Sakar (Head Barber)</p>
-          <p>(02) 9809 4807</p>
+          <p>owner: Sam Sakar (Head Barber)</p>
+          <p>tel:(02) 9809 4807</p>
+          <p>email: toprydebarbershop@gmail.com</p>
         </section>
         <section class="item" id="map-location">
-          <h1>Our Location</h1>
-          <br />
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13259.268490600076!2d151.10357889235834!3d-33.81703216288531!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x516122b7b00dd9f2!2sTop+Ryde+Barber+Shop!5e0!3m2!1sen!2sau!4v1509249841346"
             width="100%"
