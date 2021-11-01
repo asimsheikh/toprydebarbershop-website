@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <title>Top Ryde Barber Shop</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description"
-        content="We are a babershop with the best fades, haircuts, styles and trims in the Sydney. located in Top Ryde Sydney." />
-    <meta name="google-site-verification" content="U-qSmQqNPntzuM8OYh5w9BhNxojFoKpPGHLA9N9p9PQ" />
-    <link rel="stylesheet" href="styles.css" />
+    <meta
+      name="description"
+      content="We are a babershop with the best fades, haircuts, styles and trims in the Sydney. located in Top Ryde Sydney."
+    />
+    <meta
+      name="google-site-verification"
+      content="U-qSmQqNPntzuM8OYh5w9BhNxojFoKpPGHLA9N9p9PQ"
+    />
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&display=swap');
     </style>
     <style>
         * {
@@ -19,80 +22,307 @@
             box-sizing: border-box;
         }
 
-        body {
-            background-color: #000000e6;
-            /* background-color: #1B1B1B; looks nice */
-            color: white;
-            font-family: 'Montserrat', sans-serif;
-        }
+      body {
+        background-color: #000000e6;
+        color: white;
+        font-family: 'Montserrat', sans-serif;
+      }
 
         p {
             font-size: 1rem;
             color: #ffffffc7;
         }
 
-        .container {
-            display: flex;
-            flex-direction: column;
+      @media screen and (min-width: 550px) {
+        p {
+          font-size: 1.1rem;
+          color: #ffffffc7;
+        }
 
-            /* These properties not needed */
-            /* justify-content: flex-start;
-     			align-items: stretch; */
-            /* This property is causing a lot of problems
-      			height: 100vh; */
+        .container {
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-start;
+        }
+
+        nav {
+          display: flex;
+          align-items: flex-start;
+          justify-content: flex-start;
+        }
+
+        .logo {
+          font-weight: 800;
         }
 
         .item {
-            flex-grow: 1;
-            padding: 10px;
-            margin: 10px;
+          padding: 1rem;
+          margin: 1rem;
         }
 
-        /* #hero {
-      display: flex;
-      flex-direction: row;
-    } */
-
-        .hero-image>img {
-            width: 100%;
-            height: auto;
-            margin-top: 2rem;
+        #hero {
+          display: flex;
+          flex-direction: row;
+          margin: 2rem 4rem;
         }
 
-        .link-button {
-            font-size: 1.4rem;
-            text-decoration: none;
-            color: white;
-            border: solid 2px white;
-            padding: 1rem 2rem;
-            transition-duration: 200ms;
+        .hero-main {
+          font-size: 2rem;
+          margin-top: 2rem;
+          flex: 3;
         }
 
-        .link-button:hover {
-            color: black;
-            background-color: white;
+        .hero-image {
+          margin-left: 2rem;
+          flex: 4;
         }
 
-        /* #trading-hours {}
+        .hero-image img {
+          width: 100%;
+          height: auto;
+          margin-top: 2rem;
+        }
 
-		#price-list {} */
+        .small-text {
+          font-size: 0.8rem;
+          color: lightgrey;
+        }
+
+        .google-logo {
+          width: 160px;
+          height: auto;
+        }
+
+        .link-button.cta-button {
+          font-size: 1.2rem;
+          text-decoration: none;
+          color: black;
+          background-color: white;
+          border: solid 2px white;
+          padding: 1rem 3rem;
+          transition-duration: 200ms;
+        }
+
+        .link-button.cta-button:hover {
+          color: white;
+          background-color: #000000e6;
+        }
+
+        .reviews {
+          margin-top: -3rem;
+          margin-left: 7rem;
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          justify-content: center;
+        }
+
+        #testimonials {
+          background-color: #2f2e2e;
+          margin: 2rem 0rem;
+          padding: 3.5rem 2rem;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        }
+
+        #testimonials h1 {
+          font-size: 2rem;
+        }
+
+        .testimonial-list {
+          margin-top: 2rem;
+          display: flex;
+          align-items: flex-end;
+        }
+
+        .testimonial {
+          flex: 1;
+          padding: 1rem 2rem;
+        }
+
+        .left-quote {
+          font-size: 2.5rem;
+          font-weight: 900;
+        }
+
+        .testimonial-name {
+          font-weight: 600;
+          padding: 2rem 0rem;
+        }
+
+        .services h1 {
+          font-size: 2rem;
+          text-align: center;
+          padding-bottom: 2rem;
+        }
+
+        .service-list {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          flex-wrap: wrap;
+        }
+
+        .service-item {
+          width: 40%;
+          padding: 1.5rem;
+        }
+
+        .service-item h3 {
+          padding-bottom: 1rem;
+        }
+
+        .service-item p {
+          padding-top: 0rem;
+        }
+
+        #gallery {
+          background-color: #2f2e2e;
+          margin: 2rem 0rem;
+          padding: 5rem 2rem;
+          display: flex;
+          justify-content: center;
+          flex-wrap: wrap;
+        }
+
+        #gallery h1 {
+          width: 100%;
+          font-size: 2rem;
+          margin-bottom: 2rem;
+          text-align: center;
+        }
+
+        .gallery-image {
+          width: 20%;
+          height: 200px;
+          margin: 0.5rem;
+        }
+
+        .gallery-image img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+
+        #trading-hours h1 {
+          font-size: 2rem;
+        }
+
+        #trading-hours {
+          width: 30%;
+          padding-left: 2rem;
+        }
+
+        #trading-hours table {
+          font-size: 1.1rem;
+          color: #ffffffc7;
+          border-collapse: collapse;
+        }
+
+        #trading-hours th {
+          text-align: left;
+          display: none;
+        }
+
+        .day {
+          font-weight: 900;
+        }
+
+        #trading-hours table,
+        th,
+        td {
+          border-bottom: 1px solid #ffffff28;
+          padding: 0.5rem 0.5rem;
+        }
+
+        .trading-contact-map {
+          display: flex;
+          justify-content: center;
+          flex-wrap: wrap;
+        }
+
+        .trading-contact-map h1 {
+          font-size: 2rem;
+        }
 
         #contact-details {
-            background-color: gray;
+          width: 40%;
+          line-height: 2.4rem;
+          padding-left: 5rem;
+        }
+
+        #contact-details h1 {
+          font-size: 2rem;
         }
 
         #map-location {
-            min-height: 400px;
+          width: 70%;
+          height: 500px;
         }
 
-        footer {
-            background-color: maroon;
+        #map-location h1 {
+          text-align: center;
+          font-size: 2rem;
         }
 
-        @media screen and (max-width: 650px) {
-            .logo {
-                font-weight: 800;
-            }
+        .social-logos {
+          display: flex;
+          justify-content: space-around;
+        }
+      }
+
+      @media screen and (max-width: 550px) {
+        p {
+          font-size: 1.1rem;
+          color: #ffffffc7;
+        }
+
+        .container {
+          flex-direction: column;
+          justify-content: flex-start;
+        }
+
+        nav {
+          display: flex;
+          align-items: center;
+          justify-content: flex-start;
+        }
+
+        .logo {
+          font-weight: 800;
+        }
+
+        .item {
+          padding: 1rem 0.5rem;
+          margin: 1rem 0.5rem;
+        }
+
+        #hero {
+          display: flex;
+          flex-direction: column;
+          padding-bottom: 2rem;
+          margin-top: 4rem;
+        }
+
+        .hero-main h1 {
+          font-size: 2.3rem;
+        }
+
+        .hero-image img {
+          display: none;
+        }
+
+        .small-text {
+          font-size: 0.8rem;
+          color: lightgrey;
+        }
+
+        .google-logo {
+          width: 160px;
+          height: auto;
+        }
 
             #hero {
                 display: flex;
@@ -105,189 +335,439 @@
                 font-size: 2.3rem;
             }
 
-            .hero-image>img {
-                width: 100%;
-                height: auto;
-                margin-top: 2rem;
-            }
+        .sub-hero-text {
+          margin-bottom: 1rem;
+        }
 
-            .link-button.cta-button {
-                font-size: 1rem;
-                text-decoration: none;
-                color: black;
-                background-color: white;
-                border: solid 2px white;
-                padding: 0.5rem 2rem;
-                transition-duration: 200ms;
-            }
+        .reviews {
+          margin-left: 6rem;
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          justify-content: center;
+        }
 
-            .link-button.cta-button:hover {
-                color: black;
-                background-color: white;
-            }
+        #testimonials {
+          background-color: #2f2e2e2d;
+          margin: 2rem 0rem;
+          padding: 2rem 2rem;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        }
 
-            thead>tr {
-                text-align: left;
-            }
+        .testimonial {
+          padding: 20px 10px 10px 0px;
+        }
 
-            td {
-                padding: 0.2rem;
-            }
+        .testimonial-name {
+          font-weight: 600;
+          padding: 10px 0px;
+        }
+
+        .services h1 {
+          font-size: 2rem;
+          text-align: center;
+          padding-bottom: 2rem;
+        }
+
+        .service-list {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          flex-wrap: wrap;
+        }
+
+        .service-item {
+          width: 100%;
+          padding: 1.5rem;
+        }
+
+        .service-item h3 {
+          padding-bottom: 1rem;
+        }
+
+        .service-item p {
+          padding-top: 0rem;
+        }
+
+        #gallery {
+          background-color: #2f2e2e;
+          margin: 2rem 0rem;
+          padding: 2rem 0rem;
+          display: flex;
+          justify-content: space-around;
+          flex-wrap: wrap;
+        }
+
+        #gallery h1 {
+          width: 100%;
+          font-size: 2rem;
+          margin-bottom: 2rem;
+          text-align: center;
+        }
+
+        .gallery-image {
+          width: 45%;
+          height: 200px;
+          margin: 0.5rem 0.5rem;
+        }
+
+        .gallery-image img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+
+        #trading-hours h1 {
+          font-size: 2rem;
+        }
+
+        #trading-hours {
+          width: 90%;
+          padding-left: 2rem;
+        }
+
+        #trading-hours table {
+          font-size: 1.1rem;
+          color: #ffffffc7;
+          border-collapse: collapse;
+        }
+
+        #trading-hours th {
+          text-align: left;
+          display: none;
+        }
+
+        .day {
+          font-weight: 900;
+        }
+
+        #trading-hours table,
+        th,
+        td {
+          border-bottom: 1px solid #ffffff28;
+          padding: 0.5rem 0.5rem;
+        }
+
+        .trading-contact-map {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+        }
+
+        .trading-contact-map h1 {
+          font-size: 2rem;
+        }
+
+        #contact-details {
+          line-height: 2.4rem;
+          padding-left: 2rem;
+          padding-top: 2rem;
+        }
+
+        #contact-details h1 {
+          font-size: 2rem;
+        }
+
+        #map-location {
+          height: 500px;
+        }
+
+        #map-location h1 {
+          text-align: center;
+          font-size: 2rem;
+        }
+
+        .social-logos {
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
         }
     </style>
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="container">
-        <nav class="navbar">
-            <div class="brand-logo">
-                <img src="images/logo_black_final.jpg" alt="Top Ryde Logo" class="logo-image" />
+      <nav class="item"><span class="logo">TOPRYDE</span>&nbsp;Barbershop</nav>
+      <section class="item" id="hero">
+        <div class="hero-main">
+          <h1>The Best Haircuts</h1>
+          <h1>Razor Fades, Trims & Shaves</h1>
+          <br />
+          <p class="sub-hero-text">
+            We are a group of professional barbers in Sydney that care about the
+            craft of the perfect cut and fade. An institution that has been in
+            the business for over 50 years
+          </p>
+          <br />
+          <a class="link-button cta-button" href="/">Book an appointment</a>
+        </div>
+        <div class="hero-image">
+          <img
+            src="https://images.unsplash.com/photo-1590540179852-2110a54f813a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"
+            alt=""
+          />
+        </div>
+      </section>
+      <section class="item" id="reviews">
+        <div class="reviews">
+          <div class="social">
+            <img
+              class="google-logo"
+              src="https://upload.wikimedia.org/wikipedia/commons/8/8b/Google_2015_logo_colorless_mourning_period.svg"
+              alt="Google Logo"
+            />
+            <div style="text-align: center">
+              <p>4.8 &#9733;&#9733;&#9733;&#9733;&#9733;</p>
+              <p><span class="small-text">184 Reviews</span></p>
             </div>
-
-            <a href="#" class="toggle-button">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </a>
-
-            <div class="navbar-links">
-                <ul class="nav-list">
-                    <li><a href="">Home</a></li>
-                    <li><a href="">Services</a></li>
-                    <li><a href="">Prices</a></li>
-                    <li><a href="">Gallery</a></li>
-                    <li><a href="">Contact</a></li>
-                </ul>
+          </div>
+        </div>
+      </section>
+      <section class="item" id="testimonials">
+        <h1>Our customers &#129505; our work</h1>
+        <div class="testimonial-list">
+          <div class="testimonial">
+            <div><span class="left-quote">&#8220;</span></div>
+            <div class="testimonial-text">
+              <p>
+                Welcome to Top Ryde City Ladies & Gentleman. The place where
+                this legendary barber is cutting and fading, while also
+                perfecting the art of cutting hair right by TOWN. 5/5 stars
+              </p>
             </div>
-        </nav>
-
-        <section class="item" id="hero">
-            <div class="hero-main">
-                <h1>The Best Fades</h1>
-                <h1>Cuts, Trims & Shaves</h1>
-                <br />
-                <p>
-                    We are a group of professional barbers in Ryde that care. An
-                    institution that has been in the business for over 50 years
-                </p>
-                <p>
-                    <br />
-                    <br />
-                    <a class="link-button cta-button" href="/">Book an appointment</a>
-                </p>
+            <div class="testimonial-name">Tyler Skeen</div>
+            <div class="testimonial-photo"></div>
+          </div>
+          <div class="testimonial">
+            <div><span class="left-quote">&#8220;</span></div>
+            <div class="testimonial-text">
+              <p>
+                I have been coming to Sam for just over 10 years. He is a
+                gentleman and an absolute perfectionist ... a perfect haircut
+                every time. I highly recommend Top Ryde Barber Shop
+              </p>
             </div>
-            <div class="hero-image">
-                <img id="shaver"
-                    src="https://images.unsplash.com/photo-1532710093739-9470acff878f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"
-                    alt="a shaver" />
+            <div class="testimonial-name">Matthew L</div>
+            <div class="testimonial-photo"></div>
+          </div>
+          <div class="testimonial">
+            <div><span class="left-quote">&#8220;</span></div>
+            <div class="testimonial-text">
+              <p>
+                Sam is nice and kind .. Gives you the haircut you want and takes
+                his time. He cuts it with care and love .. and tries to get to
+                knows everyone who visits his shop.
+              </p>
             </div>
+            <div class="testimonial-name">Delmer Fernandez</div>
+            <div class="testimonial-photo"></div>
+          </div>
+        </div>
+      </section>
+      <section class="item services" id="services">
+        <h1>Our services and prices</h1>
+        <div class="service-list">
+          <div class="service-item">
+            <h3>Normal Men's Cut - $35.00</h3>
+            <p>
+              ed ut perspiciatis unde omnis iste natus error sit voluptatem
+              accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+            </p>
+          </div>
+          <div class="service-item">
+            <h3>Fades and Razor Fades - $40.00</h3>
+            <p>
+              ed ut perspiciatis unde omnis iste natus error sit voluptatem
+              accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+            </p>
+          </div>
+          <div class="service-item">
+            <h3>Face Shave - $25.00</h3>
+            <p>
+              ed ut perspiciatis unde omnis iste natus error sit voluptatem
+              accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+            </p>
+          </div>
+          <div class="service-item">
+            <h3>Beard Trims - $10.00</h3>
+            <p>
+              ed ut perspiciatis unde omnis iste natus error sit voluptatem
+              accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+            </p>
+          </div>
+          <div class="service-item">
+            <h3>Beard Trims and Lineups - $25.00</h3>
+            <p>
+              ed ut perspiciatis unde omnis iste natus error sit voluptatem
+              accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+            </p>
+          </div>
+          <div class="service-item">
+            <h3>Discounted Pricing Men's Cut</h3>
+            <p>Aged Pension Cuts - $25.00</p>
+            <p>School Students - $30.00</p>
+            <p>Kids Under 10 - $25.00</p>
+          </div>
+        </div>
+      </section>
+      <section class="" id="gallery">
+        <h1>Our work</h1>
+        <div class="gallery-image">
+          <img src="/images/fade_1_bw.jpg" alt="Fade haircut" />
+        </div>
+        <div class="gallery-image">
+          <img src="/images/fade_2_bw.jpg" alt="Fade haircut" />
+        </div>
+        <div class="gallery-image">
+          <img src="/images/fade_3_bw.jpg" alt="Fade haircut" />
+        </div>
+        <div class="gallery-image">
+          <img src="/images/fade_1_bw.jpg" alt="Fade haircut" />
+        </div>
+        <div class="gallery-image">
+          <img src="/images/fade_1_bw.jpg" alt="Fade haircut" />
+        </div>
+        <div class="gallery-image">
+          <img src="/images/fade_1_bw.jpg" alt="Fade haircut" />
+        </div>
+        <div class="gallery-image">
+          <img src="/images/fade_1_bw.jpg" alt="Fade haircut" />
+        </div>
+        <div class="gallery-image">
+          <img src="/images/fade_1_bw.jpg" alt="Fade haircut" />
+        </div>
+      </section>
+      <h1 style="text-align: center">Our contact details and location</h1>
+      <div class="item trading-contact-map">
+        <section id="trading-hours">
+          <table>
+            <tr>
+              <th>Day</th>
+              <th>Opening hour</th>
+              <th>Closing hour</th>
+            </tr>
+            <tr>
+              <td class="day">Monday</td>
+              <td>8.30am</td>
+              <td>5.00pm</td>
+            </tr>
+            <tr>
+              <td class="day">Tuesday</td>
+              <td>8.30am</td>
+              <td>5.00pm</td>
+            </tr>
+            <tr>
+              <td class="day">Wednesday</td>
+              <td>8.30am</td>
+              <td>5.00pm</td>
+            </tr>
+            <tr>
+              <td class="day">Thursday</td>
+              <td>8.30am</td>
+              <td>6.00pm</td>
+            </tr>
+            <tr>
+              <td class="day">Friday</td>
+              <td>8.30am</td>
+              <td>5.30pm</td>
+            </tr>
+            <tr>
+              <td class="day">Saturday</td>
+              <td>7.30am</td>
+              <td>2.30pm</td>
+            </tr>
+            <tr>
+              <td class="day">Sunday</td>
+              <td>Closed</td>
+              <td></td>
+            </tr>
+          </table>
         </section>
-        <section class="item" id="price-list">
-            <h1>Services</h1>
-            <br />
-            <table class="price-list-table">
-                <thead>
-                    <tr class="price-list-header">
-                        <th>Service</th>
-                        <th>Price</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Normal Men's Cut</td>
-                        <td>35</td>
-                    </tr>
-                    <tr>
-                        <td>Fades</td>
-                        <td>40</td>
-                    </tr>
-                    <tr>
-                        <td>Razor Fades</td>
-                        <td>40</td>
-                    </tr>
-                    <tr>
-                        <td>Aged Pension Cuts</td>
-                        <td>25</td>
-                    </tr>
-                    <tr>
-                        <td>School Students</td>
-                        <td>30</td>
-                    </tr>
-                    <tr>
-                        <td>Kids Under 10</td>
-                        <td>25</td>
-                    </tr>
-                    <tr>
-                        <td>Face Shave</td>
-                        <td>25</td>
-                    </tr>
-                    <tr>
-                        <td>Beard Trim and Line Ups</td>
-                        <td>25</td>
-                    </tr>
-                    <tr>
-                        <td>Beard Trim</td>
-                        <td>10</td>
-                    </tr>
-                </tbody>
-            </table>
+        <section id="contact-details">
+          <p>4 Church Street</p>
+          <p>RYDE NSW 2112</p>
+          <p>Sydney Australia</p>
+          <br />
+          <p>Sam Sakar (Head Barber)</p>
+          <p>(02) 9809 4807</p>
+          <p>toprydebarbershop@gmail.com</p>
         </section>
-        <section class="item" id="trading-hours">
-            <h1>Trading Hours</h1>
-            <br />
-            <table class="price-list-table">
-                <thead>
-                    <tr class="price-list-header">
-                        <th>Day</th>
-                        <th>Time</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Monday</td>
-                        <td>8.30am - 5.00pm</td>
-                    </tr>
-                    <tr>
-                        <td>Tuesday</td>
-                        <td>8.30am - 5.00pm</td>
-                    </tr>
-                    <tr>
-                        <td>Wednesday</td>
-                        <td>8.30am - 5.00pm</td>
-                    </tr>
-                    <tr>
-                        <td>Thursday</td>
-                        <td>8.30am - 6.00pm</td>
-                    </tr>
-                    <tr>
-                        <td>Friday</td>
-                        <td>8.30am - 5.30pm</td>
-                    </tr>
-                    <tr>
-                        <td>Saturday</td>
-                        <td>7.30am - 2.30pm</td>
-                    </tr>
-                    <tr>
-                        <td>Sunday</td>
-                        <td>Closed</td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
-        <section class="item" id="contact-details">Contact Details</section>
         <section class="item" id="map-location">
-            <h1>Our Location</h1>
-            <p>4 Church Street</p>
-            <p>RYDE NSW 2112</p>
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13259.268490600076!2d151.10357889235834!3d-33.81703216288531!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x516122b7b00dd9f2!2sTop+Ryde+Barber+Shop!5e0!3m2!1sen!2sau!4v1509249841346"
-                width="100%" height="80%" frameborder="0" allowfullscreen></iframe>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13259.268490600076!2d151.10357889235834!3d-33.81703216288531!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x516122b7b00dd9f2!2sTop+Ryde+Barber+Shop!5e0!3m2!1sen!2sau!4v1509249841346"
+            width="100%"
+            height="80%"
+            frameborder="0"
+            allowfullscreen
+          ></iframe>
         </section>
-        <footer class="item">Footer</footer>
+      </div>
+      <footer class="item">
+        <div class="social-logos">
+          <div style="width: 2rem" class="instagram-logo">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              class="Icon-sc-c98r68-0 dSuruW Icon-sc-c98r68-1 kMfJYW"
+            >
+              <g fill="#DBDCE1">
+                <path
+                  d="M12 2.162c3.204 0 3.584.012 4.849.07 1.366.062 2.633.336 3.608 1.311.975.975 1.249 2.242 1.311 3.608.058 1.265.07 1.645.07 4.849s-.012 3.584-.07 4.849c-.062 1.366-.336 2.633-1.311 3.608-.975.975-2.242 1.249-3.608 1.311-1.265.058-1.645.07-4.849.07s-3.584-.012-4.849-.07c-1.366-.062-2.633-.336-3.608-1.311-.975-.975-1.249-2.242-1.311-3.608-.058-1.265-.07-1.645-.07-4.849s.012-3.584.07-4.849c.062-1.366.336-2.633 1.311-3.608.975-.975 2.242-1.249 3.608-1.311 1.265-.058 1.645-.07 4.849-.07M12 0C8.741 0 8.332.014 7.052.072c-1.95.089-3.663.567-5.038 1.942C.639 3.389.161 5.102.072 7.052.014 8.332 0 8.741 0 12c0 3.259.014 3.668.072 4.948.089 1.95.567 3.663 1.942 5.038 1.375 1.375 3.088 1.853 5.038 1.942C8.332 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 1.95-.089 3.663-.567 5.038-1.942 1.375-1.375 1.853-3.088 1.942-5.038.058-1.28.072-1.689.072-4.948 0-3.259-.014-3.668-.072-4.948-.089-1.95-.567-3.663-1.942-5.038C20.611.639 18.898.161 16.948.072 15.668.014 15.259 0 12 0z"
+                ></path>
+                <path
+                  d="M12 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8z"
+                ></path>
+                <circle cx="18.406" cy="5.594" r="1.44"></circle>
+              </g>
+            </svg>
+          </div>
+          <div style="width: 2rem" class="facebook-logo">
+            <svg
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+              class="Icon-sc-c98r68-0 dSuruW Icon-sc-c98r68-1 kMfJYW"
+            >
+              <g fill="none" fill-rule="evenodd">
+                <path
+                  d="M9.032 23L9 13H5V9h4V6.5C9 2.789 11.298 1 14.61 1c1.585 0 2.948.118 3.345.17v3.88H15.66c-1.8 0-2.15.856-2.15 2.112V9h5.241l-2 4h-3.24v10H9.032z"
+                  fill="#DBDCE1"
+                ></path>
+              </g>
+            </svg>
+          </div>
+          <div style="width: 2rem" class="twitter-logo">
+            <svg
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+              class="Icon-sc-c98r68-0 dSuruW Icon-sc-c98r68-1 kMfJYW"
+            >
+              <g fill="none" fill-rule="evenodd">
+                <path
+                  d="M24 4.6c-.9.4-1.8.7-2.8.8 1-.6 1.8-1.6 2.2-2.7-1 .6-2 1-3.1 1.2-.9-1-2.2-1.6-3.6-1.6-2.7 0-4.9 2.2-4.9 4.9 0 .4 0 .8.1 1.1-4.2-.2-7.8-2.2-10.2-5.2-.5.8-.7 1.6-.7 2.5 0 1.7.9 3.2 2.2 4.1-.8 0-1.6-.2-2.2-.6v.1c0 2.4 1.7 4.4 3.9 4.8-.4.1-.8.2-1.3.2-.3 0-.6 0-.9-.1.6 2 2.4 3.4 4.6 3.4-1.7 1.3-3.8 2.1-6.1 2.1-.4 0-.8 0-1.2-.1 2.2 1.4 4.8 2.2 7.5 2.2 9.1 0 14-7.5 14-14v-.6c1-.7 1.8-1.6 2.5-2.5z"
+                  fill="#DBDCE1"
+                ></path>
+              </g>
+            </svg>
+          </div>
+          <div style="width: 2rem" class="linkedin-logo">
+            <svg
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+              class="Icon-sc-c98r68-0 dSuruW Icon-sc-c98r68-1 kMfJYW"
+            >
+              <g fill="none" fill-rule="evenodd">
+                <path
+                  d="M23 0H1C.4 0 0 .4 0 1v22c0 .6.4 1 1 1h22c.6 0 1-.4 1-1V1c0-.6-.4-1-1-1zM7.1 20.5H3.6V9h3.6v11.5h-.1zM5.3 7.4c-1.1 0-2.1-.9-2.1-2.1 0-1.1.9-2.1 2.1-2.1 1.1 0 2.1.9 2.1 2.1 0 1.2-.9 2.1-2.1 2.1zm15.2 13.1h-3.6v-5.6c0-1.3 0-3-1.8-3-1.9 0-2.1 1.4-2.1 2.9v5.7H9.4V9h3.4v1.6c.5-.9 1.6-1.8 3.4-1.8 3.6 0 4.3 2.4 4.3 5.5v6.2z"
+                  fill="#DBDCE1"
+                ></path>
+              </g>
+            </svg>
+          </div>
+        </div>
+      </footer>
     </div>
-
-    <!-- Attaching js script -->
-    <script src="app.js"></script>
-</body>
-
+  </body>
 </html>
