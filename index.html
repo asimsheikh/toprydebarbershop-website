@@ -45,11 +45,6 @@
           justify-content: flex-start;
         }
 
-        .item {
-          padding: 1rem;
-          margin: 1rem;
-        }
-
         nav {
           display: flex;
           align-items: flex-start;
@@ -58,6 +53,11 @@
 
         .logo {
           font-weight: 800;
+        }
+
+        .item {
+          padding: 1rem;
+          margin: 1rem;
         }
 
         #hero {
@@ -81,6 +81,16 @@
           width: 100%;
           height: auto;
           margin-top: 2rem;
+        }
+
+        .small-text {
+          font-size: 0.8rem;
+          color: lightgrey;
+        }
+
+        .google-logo {
+          width: 160px;
+          height: auto;
         }
 
         .link-button.cta-button {
@@ -140,20 +150,6 @@
         .testimonial-name {
           font-weight: 600;
           padding: 2rem 0rem;
-        }
-
-        .small-text {
-          font-size: 0.8rem;
-          color: lightgrey;
-        }
-
-        .google-logo {
-          width: 160px;
-          height: auto;
-        }
-
-        .social {
-          /* margin-left: 6rem; */
         }
 
         .services h1 {
@@ -279,6 +275,11 @@
       }
 
       @media screen and (max-width: 550px) {
+        p {
+          font-size: 1.1rem;
+          color: #ffffffc7;
+        }
+
         .container {
           flex-direction: column;
           justify-content: flex-start;
@@ -290,16 +291,11 @@
           justify-content: flex-start;
         }
 
-        nav ul {
-          margin-right: 10px;
-        }
-
         .logo {
           font-weight: 800;
         }
 
         .item {
-          flex-grow: 1;
           padding: 1rem 0.5rem;
           margin: 1rem 0.5rem;
         }
@@ -319,27 +315,6 @@
           display: none;
         }
 
-        .sub-hero-text {
-          margin-bottom: 1rem;
-        }
-
-        .reviews {
-          margin-left: 6rem;
-          display: flex;
-          flex-direction: column;
-          align-items: flex-start;
-          justify-content: center;
-        }
-
-        .testimonial {
-          padding: 20px 10px 10px 0px;
-        }
-
-        .testimonial-name {
-          font-weight: 600;
-          padding: 10px 0px;
-        }
-
         .small-text {
           font-size: 0.8rem;
           color: lightgrey;
@@ -348,10 +323,6 @@
         .google-logo {
           width: 160px;
           height: auto;
-        }
-
-        .social {
-          /* margin-left: 6rem; */
         }
 
         .link-button.cta-button {
@@ -369,9 +340,61 @@
           background-color: white;
         }
 
-        td {
-          border-bottom: 1px solid rgba(211, 211, 211, 0.3);
-          padding: 0.4rem;
+        .sub-hero-text {
+          margin-bottom: 1rem;
+        }
+
+        .reviews {
+          margin-left: 6rem;
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          justify-content: center;
+        }
+
+        #testimonials {
+          background-color: #2f2e2e2d;
+          margin: 2rem 0rem;
+          padding: 2rem 2rem;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        }
+
+        .testimonial {
+          padding: 20px 10px 10px 0px;
+        }
+
+        .testimonial-name {
+          font-weight: 600;
+          padding: 10px 0px;
+        }
+
+        .services h1 {
+          font-size: 2rem;
+          text-align: center;
+          padding-bottom: 2rem;
+        }
+
+        .service-list {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          flex-wrap: wrap;
+        }
+
+        .service-item {
+          width: 100%;
+          padding: 1.5rem;
+        }
+
+        .service-item h3 {
+          padding-bottom: 1rem;
+        }
+
+        .service-item p {
+          padding-top: 0rem;
         }
 
         .social-logos {
