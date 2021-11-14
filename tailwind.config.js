@@ -2,10 +2,14 @@ module.exports = {
   purge: [],
   darkMode: false, // or 'media' or 'class'
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        Montserrat: ['Montserrat', 'sans-serif'],
+      },
+    },
   },
   variants: {
     extend: {},
   },
   plugins: [],
-}
+};
