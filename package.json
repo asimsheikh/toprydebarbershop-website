@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build:css": "tailwindcss build -i src\\styles.css -o public\\output.css --watch"
   },
   "repository": {
     "type": "git",
@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/asimsheikh/toprydebarbershop-website/issues"
   },
-  "homepage": "https://github.com/asimsheikh/toprydebarbershop-website#readme"
+  "homepage": "https://github.com/asimsheikh/toprydebarbershop-website#readme",
+  "dependencies": {
+    "tailwindcss": "^2.2.19"
+  }
 }
