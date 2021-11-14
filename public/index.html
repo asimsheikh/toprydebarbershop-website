@@ -53,8 +53,9 @@
             class="
               bg-white
               text-black
+              hover:bg-black hover:text-white
               w-full
-              sm:w-9/12 sm:mt-8 sm:py-5
+              sm:w-9/12 sm:mt-8 sm:py-5 sm:text-lg
               py-3
               inline-block
               text-center
@@ -89,11 +90,18 @@
           </div>
         </div>
       </section>
-      <section class="p-4" id="testimonials">
-        <h1 class="font-bold text-center text-2xl">
+      <section class="p-4 sm:pt-10" id="testimonials">
+        <h1 class="font-bold text-center text-2xl sm:text-4xl">
           Our customers &#129505; our work
         </h1>
-        <div class="testimonial-list flex flex-col pt-5">
+        <div
+          class="
+            testimonial-list
+            flex flex-col
+            sm:flex-row sm:gap-10 sm:px-10 sm:items-end sm:mx-10
+            pt-5
+          "
+        >
           <div class="testimonial pt-2">
             <div><span class="font-bold text-4xl">&#8220;</span></div>
             <div class="testimonial-text">
