@@ -6,6 +6,9 @@ module.exports = {
       fontFamily: {
         Montserrat: ['Montserrat', 'sans-serif'],
       },
+      colors: {
+        secondary: '#2f2e2e6b',
+      },
     },
   },
   variants: {
