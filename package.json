@@ -1,0 +1,23 @@
+{
+  "name": "toprydebarbershop-website",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build:css": "tailwindcss build -i src\\styles.css -o public\\output.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/asimsheikh/toprydebarbershop-website.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/asimsheikh/toprydebarbershop-website/issues"
+  },
+  "homepage": "https://github.com/asimsheikh/toprydebarbershop-website#readme",
+  "dependencies": {
+    "tailwindcss": "^2.2.19"
+  }
+}
