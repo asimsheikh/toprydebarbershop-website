@@ -12,7 +12,13 @@
       name="google-site-verification"
       content="U-qSmQqNPntzuM8OYh5w9BhNxojFoKpPGHLA9N9p9PQ"
     />
-    <link rel="stylesheet" href="output.css" />
+    <link
+      rel="preload"
+      href="output.css"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <noscript><link rel="stylesheet" href="output.css" /></noscript>
   </head>
   <body style="background-color: #000000e6">
     <div class="container mx-auto text-white font-Montserrat">
@@ -38,6 +44,12 @@
             Razor Fades, Trims & Shaves
           </h1>
           <br />
+          <p class="text-md text-gray-300 sm:leading-loose sm:text-lg sm:pt-5">
+            We are a group of professional barbers in Sydney that care about the
+            craft of the perfect cut and fade. An institution that has been in
+            the business for over 50 years
+          </p>
+          <br />
           <a
             class="
               bg-white
@@ -53,6 +65,40 @@
             >Book an appointment</a
           >
         </div>
+        <div class="hero-image hidden sm:w-7/12 sm:m-10 sm:inline-block">
+          <img
+            src="images/hero-image.jpg"
+            loading="lazy"
+            alt="combing hair of barbershop client"
+          />
+        </div>
+      </section>
+      <section class="py-8 sm:py-6" id="reviews">
+        <div
+          class="
+            reviews
+            p-4
+            flex
+            pl-28
+            justify-center
+            sm:justify-start sm:pl-36
+          "
+        >
+          <div class="social">
+            <img
+              class="google-logo w-7/12"
+              loading="lazy"
+              src="https://upload.wikimedia.org/wikipedia/commons/8/8b/Google_2015_logo_colorless_mourning_period.svg"
+              alt="Google Logo"
+            />
+            <div>
+              <p class="text-gray-400 text-lg pl-5">
+                4.8 &#9733;&#9733;&#9733;&#9733;&#9733;
+              </p>
+              <p><span class="text-gray-400 text-sm pl-8">184 Reviews</span></p>
+            </div>
+          </div>
+        </div>
       </section>
       <section class="p-4 pt-10 bg-secondary" id="testimonials">
         <h1 class="font-bold text-center text-2xl sm:text-4xl">
@@ -66,40 +112,46 @@
             pt-5
           "
         >
-          <div class="testimonial pt-2">
-            <div><span class="font-bold text-4xl">&#8220;</span></div>
-            <div class="testimonial-text">
+          <div class="testimonial flex flex-wrap pt-2">
+            <div class="w-1/12">
+              <span class="font-bold text-4xl">&#8220;</span>
+            </div>
+            <div class="w-11/12 testimonial-text">
               <p class="text-gray-300">
                 Welcome to Top Ryde City Ladies & Gentleman. The place where
                 this legendary barber is cutting and fading, while also
                 perfecting the art of cutting hair right by TOWN. 5/5 stars
               </p>
             </div>
-            <div class="font-bold pt-5">Tyler Skeen</div>
+            <div class="w-full font-bold pl-10 pt-5">Tyler Skeen</div>
             <div class="testimonial-photo"></div>
           </div>
-          <div class="testimonial py-2 pt-10">
-            <div><span class="font-bold text-4xl">&#8220;</span></div>
-            <div class="testimonial-text">
+          <div class="testimonial flex flex-wrap py-2 pt-10">
+            <div class="w-1/12">
+              <span class="font-bold text-4xl">&#8220;</span>
+            </div>
+            <div class="w-11/12 testimonial-text">
               <p class="text-gray-300">
                 I have been coming to Sam for just over 10 years. He is a
                 gentleman and an absolute perfectionist ... a perfect haircut
                 every time. I highly recommend Top Ryde Barber Shop
               </p>
             </div>
-            <div class="font-bold pt-5">Matthew L</div>
+            <div class="w-full font-bold pl-10 pt-5">Matthew L</div>
             <div class="testimonial-photo"></div>
           </div>
-          <div class="testimonial py-2 pt-10">
-            <div><span class="font-bold text-4xl">&#8220;</span></div>
-            <div class="testimonial-text">
+          <div class="testimonial flex flex-wrap py-2 pt-10">
+            <div class="w-1/12">
+              <span class="font-bold text-4xl">&#8220;</span>
+            </div>
+            <div class="w-11/12 testimonial-text">
               <p class="text-gray-300">
                 Sam is nice and kind .. Gives you the haircut you want and takes
                 his time. He cuts it with care and love .. and tries to get to
                 knows everyone who visits his shop.
               </p>
             </div>
-            <div class="font-bold pt-5">Delmer Fernandez</div>
+            <div class="w-full font-bold pl-10 pt-5">Delmer Fernandez</div>
             <div class="testimonial-photo"></div>
           </div>
         </div>
@@ -234,13 +286,15 @@
         class="
           item
           trading-contact-map
-          flex flex-col
-          sm:flex-row sm:items-start sm:justify-start sm:mx-12
+          flex flex-wrap
+          items-start
+          justify-center
+          sm:mx-12
           p-4
           pt-14
         "
       >
-        <section class="pl-10 sm:pl-0 sm:w-1/2" id="trading-hours">
+        <section class="sm:pl-32 w-full sm:w-5/12 sm:pb-10" id="trading-hours">
           <table class="table-auto text-gray-300">
             <tr class="hidden">
               <th>Day</th>
@@ -389,10 +443,11 @@
         </section>
         <section
           class="
-            pl-10
+            sm:pl-10
             py-10
             sm:py-2
             text-lg
+            w-full
             sm:w-1/2
             text-gray-300
             leading-loose
@@ -407,7 +462,7 @@
           <p>(02) 9809 4807</p>
           <p>toprydebarbershop@gmail.com</p>
         </section>
-        <section class="pl-5 sm:w-3/4 h-1/2" id="map-location">
+        <section class="sm:pl-5 w-full sm:w-3/4 h-1/2" id="map-location">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13259.268490600076!2d151.10357889235834!3d-33.81703216288531!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x516122b7b00dd9f2!2sTop+Ryde+Barber+Shop!5e0!3m2!1sen!2sau!4v1509249841346"
             frameborder="0"
